@@ -1,0 +1,47 @@
+body{
+    width: 750px;
+    font-size: 16px;
+    margin:auto;
+    background-color: gray;
+}
+
+header, footer{
+    background-color:rosybrown;
+    text-align: center;
+}
+
+header, footer, main{
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    padding-left: .3rem;
+}
+
+main{
+    background-color: cornsilk;
+    margin-top: -13px;
+}
+
+footer{
+    margin-top: -13px;
+}
+
+img{
+    float: right;
+    width: 140px;
+    border-radius: 10px;
+}
+
+h2{
+    border-bottom: double;
+    border-color:black ;
+}
+
+li{
+    padding-left: 1rem;
+}
+
+.update{
+    font-size:12px;
+    color:gray;
+}
