@@ -28,14 +28,18 @@ footer{
 
 img{
     float: right;
-    width: 140px;
+    width: 160px;
     border-radius: 10px;
 }
 
 h2{
     border-bottom: double;
     border-color:black ;
-    padding: .6rem;
+    margin-left: .7rem;
+}
+
+ul {
+    margin-left: .7rem;
 }
 
 a{
