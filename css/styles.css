@@ -35,13 +35,17 @@ img{
 h2{
     border-bottom: double;
     border-color:black ;
+    padding: .6rem;
 }
 
-li{
-    padding-left: 1rem;
+a{
+    color:black;
+}
+
+a:visited{
+    color:blue;
 }
 
 .update{
     font-size:12px;
-    color:gray;
 }
