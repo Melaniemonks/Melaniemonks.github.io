@@ -1,0 +1,60 @@
+body{
+    max-width: 960px;
+    margin:0 auto;
+    font-family: 'Montserrat', 'sans-serif';
+    
+}
+
+header{
+    text-align: center;
+    background-color:rgb(20, 19, 20);
+    color: white;
+    padding: .3rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: .7rem;
+}
+
+section {
+    background-color: rgb(206, 200, 200);
+    border-radius: 10px;
+
+}
+
+.class, h3{
+    background-color: rgb(24, 24, 24);
+    color:white;
+    border-radius: 5px;
+    padding: .3rem;
+
+}
+
+p{
+    padding: .3rem;
+}
+
+img{
+    border-radius: 10px;
+    width:100%;
+    box-sizing: border-box;
+    padding: .4rem;
+   
+}
+
+ul {
+    list-style-type:  none;
+    margin: .2rem;
+    padding: .2rem;
+}
+
+a{
+    color:black;
+}
+
+a:visited{
+    color:blue;
+}
