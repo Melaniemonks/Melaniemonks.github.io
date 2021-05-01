@@ -58,3 +58,9 @@ a{
 a:visited{
     color:blue;
 }
+
+footer, .update{
+    background-color:rgb(20, 19, 20);
+    text-align: center;
+    color:white;
+}
