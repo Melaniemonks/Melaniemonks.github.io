@@ -45,9 +45,11 @@ header ul {
    
 }
 
-ul li {
+ ul li {
     list-style-type: none;
-    display: inline-block;
+    display: inline;
+    display:grid;
+
 }
 
 header ul li a {
@@ -101,6 +103,12 @@ footer{
 footer{
     text-align: center;
 }
+
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
 
 ul li a {
     text-decoration: none;
