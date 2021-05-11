@@ -1,36 +1,38 @@
 body{
     margin: 0 auto;
+    max-width: initial;
 }
 
 h1,h2,h3,h4,h5,h6, li a{
     font-family: 'Raleway', sans-serif;
 }
 
-p{
-    font-family: 'Quicksand', sans-serif;
-}
-
+/*Header - site logo and name*/
 header{
-    display: grid;
-    grid-template-rows: 1fr;
+    align-items: center;
 }
 
 .sitename{
     background-color: #38839e;
-}
+    display:grid;
+    grid-template-columns: 100px 1fr;
 
-header .logobox{
-    float:left;
-    margin-left: 12rem;
-    
+}
+header img{
+    justify-self: start;
+    width: 90px;
 }
 
 header h1{
-    text-align: center;
-    margin-right: 55rem;
-    margin-top: 3rem;
+    
+    justify-self: start;
+    grid-column: 2/3;
+    align-self: center;
+    font-size: 25px;
+    
 }
 
+/*Navigations*/
 nav{
     background-color: rgb(134, 136, 143);
     text-align: center;
@@ -46,7 +48,6 @@ header ul {
 ul li {
     list-style-type: none;
     display: inline-block;
-    
 }
 
 header ul li a {
@@ -57,15 +58,18 @@ header ul li a {
     color:black;
     padding:1rem;
     
+    
+    
 }
 
 header a:hover {
     background-color: white;
   }
 
+/*main*/
+
 main{
-    width: 950px;
-    margin:.5rem auto;
+    margin:2rem;
     background-color:white;
     padding:.5rem;
     
@@ -79,9 +83,14 @@ h2{
 }
 
 p, h4{
-    padding: .3rem;
+    padding: 1rem;
 }
 
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Footer*/
 
 footer{
     background-color: grey ;
