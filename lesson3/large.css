@@ -1,23 +1,4 @@
 @media only screen and (min-width: 60em) {
-    .sitename{
-        grid-template-columns: 300px 1fr;
-    }
 
-    header h1{
     
-        justify-self: start;
-        grid-column:2/3;
-        align-self: center;
-    }
-
-    header img{
-        justify-self: end;
-        
-    }
-
-    ul li {
-        list-style-type: none;
-        display: inline-block;
-        
-    }
 }
