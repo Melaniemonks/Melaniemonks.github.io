@@ -1,8 +1,44 @@
 @media only screen and (min-width: 60em) {
-    .navigation{
-        
-        display: flex;
+    nav button{
+        display:none;
     }
-    
-    
+
+    .top{
+        flex-direction:row; /*for large view change to row*/
+        
+    }
+
+    h1{
+        text-align: center;
+        font-size:1px;
+        margin: 0;
+        
+    }
+    .motto{
+        padding: .9rem;
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .logo{
+        width: 200px;
+     }
+
+
+    .navigation{
+        display:flex;
+        justify-content:center;
+        
+      
+    }
+
+    nav ul li {
+        width:200px;
+    }
+
+    nav ul.hide {
+        display:flex;
+    }
+
 }
