@@ -34,9 +34,8 @@ h1{
 .motto{
     padding: .9rem;
     margin-top: -2rem;
-    color:rgb(61, 61, 61);
-    text-shadow: 1px 0px #2c2b2b;
-    
+    color:rgba(37,47,46,255));
+
 }
 
 nav button{
