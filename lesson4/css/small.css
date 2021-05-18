@@ -34,8 +34,9 @@ h1{
 .motto{
     padding: .9rem;
     margin-top: -2rem;
-    color: rgba(29,29,27,255);
-    text-shadow: 1px 0px #181717;
+    color:rgb(32, 32, 32);
+    text-shadow: 1px 0px #2c2b2b;
+    
 }
 
 nav button{
@@ -128,7 +129,6 @@ footer{
     background-color: rgb(134, 136, 143);
     text-align: center;
     padding: 2rem;
-    font-family: 'Raleway', sans-serif;
 }
 
 footer a{
