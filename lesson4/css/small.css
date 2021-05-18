@@ -34,7 +34,7 @@ h1{
 .motto{
     padding: .9rem;
     margin-top: -2rem;
-    color:rgb(32, 32, 32);
+    color:rgb(61, 61, 61);
     text-shadow: 1px 0px #2c2b2b;
     
 }
@@ -88,7 +88,7 @@ nav ul li a {
     
 }
 
-nav ul.hide{
+nav ul.navigation{
     display: none;
 }
 
@@ -105,13 +105,12 @@ main{
     padding-right: 5rem;
     padding-bottom: 3rem;
     background-color:rgba(224,226,215,255) ;
-    margin-top: -2rem;
+    margin-top: -1.2rem;
     
 }
 
 h2{
-    font-size: 40px;
-    padding-top:1rem;
+    padding-top:0.7rem;
     
 }
 

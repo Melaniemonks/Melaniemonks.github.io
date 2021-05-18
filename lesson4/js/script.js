@@ -6,5 +6,5 @@ yearElement.textContent = currentYear;
 
 function toggleMenu(){
     
-    document.getElementById("navo").classList.toggle("hide");
+    document.getElementById("navo").classList.toggle("navigation");
 }
