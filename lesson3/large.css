@@ -1,4 +1,40 @@
-@media only screen and (min-width: 60em) {
 
+    @media only screen and (min-width: 60em) {
     
-}
+        .top{
+            flex-direction:row; /*for large view change to row*/
+            
+        }
+    
+        h1{
+            text-align: center;
+            font-size:1px;
+            margin: 0;
+            
+        }
+        .motto{
+            padding: .9rem;
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.2rem;
+    
+        }
+    
+        .logo{
+            width: 200px;
+         }
+    
+    
+        nav ul li {
+            width:200px;
+        }
+    
+        nav ul {
+            display:flex;
+        }
+
+        .navigation{
+            justify-content: center;
+        }
+    
+    }
