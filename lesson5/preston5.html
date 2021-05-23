@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Preston Idaho weather site using responsice toggle menu">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:ital,wght@0,200;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <title>Preston Town Page</title>
+</head>
+
+<body>
+    <header>
+        <section class="top">
+            <img class="logo" src="images/icon.png" alt="logobox">
+            <section class="sitename">
+                <h1>Weather Viewz</h1>
+                <div class="motto">We bring the latest weather to you at a touch!</div>
+            </section>
+        </section>
+
+        <nav class="clearfix">
+
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul class="navigation" id="navo">
+
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Preston idaho</h2>
+
+        <div id="separation">
+
+            <img src="images/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg" alt="Photo of blue sky and a lake">
+
+            <section class="summary">
+                <h3>Weather summary</h3>
+                <section class="left">Currently: <span class="right">Sunny</span></section>
+                <section class="left">High:<span class="right">76</span></section>
+                <section class="left">Windchill: <span class="right">F</span></section>
+                <section class="left">Humidity: <span class="right">69%</span></section>
+                <section class="left">Wind Speed:<span class="right">5mph</span> </section>
+            </section>
+        </div>
+
+        <div class="weatherpred">
+            <h3>Weekly Predictions</h3>
+            <div class="flex">
+                <div class="box">
+                    <span class="topp">Sunday</span>
+                    <img src="https://placekitten.com/50/50" alt="kitten!">
+                    <span class="data">insert data</span>
+                </div>
+                <div class="box">
+                    <span class="topp">Monday</span>
+                    <img src="https://placekitten.com/50/50" alt="kitten!">
+                    <span class="data">Insert Data</span>
+                </div>
+                <div class="box">
+                    <span class="topp">Tuesday</span>
+                    <img src="https://placekitten.com/50/50" alt="kitten!">
+                    <span class="data">Insert data</span>
+                </div>
+                <div class="box">
+                    <span class="topp">Wednesday</span>
+                    <img src="https://placekitten.com/50/50" alt="kitten!">
+                    <span class="data">Insert Data</span>
+                </div>
+                <div class="box">
+                    <span class="topp">Thursday</span>
+                    <img src="https://placekitten.com/50/50" alt="kitten!">
+                    <span class="data">Insert Data</span>
+                </div>
+                <div class="box">
+                    <span class="topp">Friday</span>
+                    <img src="https://placekitten.com/50/50" alt="kitten!">
+                    <span class="data">Insert Data</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="article">
+            <h3>News Article </h3>
+            <article>
+                <img class="articleimg" src="images/craig-whitehead-SuJp8ZpkubI-unsplash (1).jpg" image of snow
+                    alt="image of man with umbrella in snow">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta laborum error cupiditate libero
+                    ipsam ea quidem sunt blanditiis doloremque laboriosam nobis eligendi quis soluta recusandae
+                    voluptatem
+                    officia, accusamus facere?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odit repellendus fuga ratione, ut,
+                    praesentium iusto officia exercitationem deserunt aspernatur voluptatibus eos excepturi nesciunt
+                    reprehenderit tempora porro velit molestiae esse?</p>
+
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        &copy;<span id="year"></span> | Melanie Monkurai | Idaho | <a href="https://www.byui.edu/online">BYUI Online
+            Learning </a><br>
+        <section class="update">Last modified: <span id="lastmod"></span></section>
+    </footer>
+
+
+</body>
+
+</html>

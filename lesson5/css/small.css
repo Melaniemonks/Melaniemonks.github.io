@@ -123,8 +123,13 @@ h2{
     
 }
 
+#separation img{
+    width:100%;
+    
+    
+}
 
-
+/*Weather prediction*/
 .box{
     border:1px solid black;
     padding: 1rem;
@@ -132,6 +137,64 @@ h2{
     border-style: dashed;
     background-color:rgba(186,196,198,255) ;
 }
+
+.hat{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.flex{
+    display:flex;
+    flex-flow:row wrap;
+    border-right: 1px solid #333;
+    
+}
+
+.box{
+	flex: 1 1 auto;
+	background-color:;
+    border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+    opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+
+.topp{
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+
+.weatherpred img {
+	border-radius: 100px;
+	padding: 0.25rem;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+/*News Article*/
+.article{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 10rem;
+}
+
+article img{
+    float:right;
+    height:200px;
+}
+
+
+/* Styling of the main page*/
 
 footer{
     background-color: rgb(134, 136, 143);
