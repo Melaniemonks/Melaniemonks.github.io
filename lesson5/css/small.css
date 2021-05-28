@@ -244,8 +244,12 @@ footer {
     list-style-type: none;
 }
 
+.social ul{
+    list-style-type: none;
+}
+
 .social img {
-    width: 5%;
+    width: 9%;
 }
 
 .social li {
