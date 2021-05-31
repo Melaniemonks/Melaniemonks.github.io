@@ -1,6 +1,8 @@
 @media only screen and (min-width: 60em) {
-    /*Start Editing from here*/
-
+    /*Start Editing from here
+  
+    
+    }
 
     
 
@@ -57,7 +59,7 @@
     text-align: center;
     background-color:rgba(224,226,215,255) ;
     padding: .8rem;
-    border-radius: .5rem;
+    
 }
 
 .data {
@@ -69,7 +71,7 @@
 
 /*article*/
 article img{
-    width: 20%;
+    width: 25%;
 }
 
 article p{

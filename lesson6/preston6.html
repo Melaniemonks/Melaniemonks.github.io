@@ -51,15 +51,21 @@
 
         <div id="separation">
 
-            <img src="images/firstimage.jpg" alt="Photo of blue sky and a lake">
+            <picture>
+            <source srcset="images/newphoto-medium.jpg" media="(min-width: 649px) and (max-width: 991px)">
+            <source srcset="images/newphotoo.jpg" media="(min-width: 992px)">
+            <img src="images/newphoto-small.jpg" alt="Photo of blue sky and a lake">
+            </picture>
 
             <section class="summary">
                 <h3>Weather summary</h3>
+                
                 <section class="left">Currently: <span class="right">Sunny</span></section>
                 <section class="left">High:<span class="right">76</span></section>
                 <section class="left">Windchill: <span class="right">F</span></section>
                 <section class="left">Humidity: <span class="right">69%</span></section>
-                <section class="left">Wind Speed:<span class="right">5mph</span> </section>
+                <section class="left">Wind Speed:<span id="wind"></span> </section>
+            
             </section>
         </div>
 
@@ -97,7 +103,7 @@
         <section class="article">
             <h3>News Article </h3>
             <article>
-                <img class="articleimg" src="images/snow.jpg" alt="man with umbrella in snow">
+                <img class="articleimg" src="images/snow-weather.jpg" alt="man with umbrella in snow">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta laborum error cupiditate libero
                     ipsam ea quidem sunt blanditiis doloremque laboriosam nobis eligendi quis soluta recusandae
                     voluptatem
@@ -136,6 +142,16 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+  google: {
+    families: [
+       "Quicksand", "Raleway"
+    ]
+  }
+});
+    </script>
 </body>
 
 </html>

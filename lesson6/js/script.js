@@ -41,3 +41,13 @@ let months = month[date.getMonth()];
 year = date.getFullYear();
 let completeDate = day + ', ' + date.getDate() + ' ' + months + ' ' + year;
 document.querySelector('#presentDate').textContent = completeDate;
+
+
+function windChill(tempF, speed){
+    let f = 35.74 + (0.6215 * tempF) - (35.75 * (speed**0.16)) + (0.4275 * tempF * (speed**0.16));
+    return f;
+}
+
+let value = windChill(3, 1).toFixed(2);
+
+document.getElementById('wind').innerHTML = value + "°";
