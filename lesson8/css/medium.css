@@ -1,0 +1,60 @@
+@media only screen and (min-width: 32.5em) {
+    nav button{
+        display:none;
+    }
+
+    .top{
+        flex-direction:row; /*for large view change to row*/
+        margin-bottom: -1rem;
+    }
+
+    .sitename{
+        margin-bottom: -2rem;
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: -1rem;
+        font-size: 50px;
+    }
+    .motto{
+        padding: .9rem;
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.2rem;
+
+    }
+
+    .logo{
+        width: 200px;
+     }
+
+
+    #navo{
+        display:flex;
+        justify-content:center;
+        
+      
+    }
+
+    nav ul li {
+        width:200px;
+    }
+
+    nav ul.hide {
+        display:flex;
+    }
+
+
+    /*Start Editing from here*/
+    main{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+footer{
+    flex-direction: row;
+
+}
+
+}

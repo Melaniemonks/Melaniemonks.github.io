@@ -1,4 +1,6 @@
-
+body{
+    margin-top: 2rem;
+}
 
 table{
     border-spacing: 1px;
@@ -8,11 +10,11 @@ table{
     box-shadow:10px 10px 10px #7d9ea3;
 }
 
-.topbottom{
+thead, tfoot{
     background-color:#7fb9c2;
 }
 
-.heading{
+thead{
     padding:.8rem;
     font-size: 1.5rem;
 }
@@ -21,7 +23,7 @@ th{
     font-family: "Ubuntu", sans-serif;
 }
 
-.columns th{
+tbody th{
     background-color: #628ca6;
     padding:.5rem;
     text-align: center;
@@ -33,24 +35,25 @@ td{
     font-family: "Ubuntu", sans-serif;
 }
 
-.other{
+tbody tr{
     background-color:#e7f0ed;   
 }
 
-.everyother{
+tbody tr:nth-child(odd){
     background-color: #e7ffed;
 }
 
-.italics{
-    font-style: italic;
-}
-
-.isolated{
+tbody tr .highlight{
     background-color: #628ca6;
     color: white;
 }
 
-.footer{
+tbody tr td span{
+    font-style: italic;
+}
+
+
+tfoot tr th{
     padding:.5rem;
     font-size:.7rem;
 }
