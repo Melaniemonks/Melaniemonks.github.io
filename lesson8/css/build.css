@@ -14,7 +14,7 @@ thead, tfoot{
     background-color:#7fb9c2;
 }
 
-thead{
+thead tr th{
     padding:.8rem;
     font-size: 1.5rem;
 }
