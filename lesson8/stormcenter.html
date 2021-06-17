@@ -51,7 +51,7 @@
         <p><label for="phone">Phone Number: </label><br>
         <input type="tel" name="phone" id="phone"><br></p>
         <p><label for="zip">Zip Code: </label><br>
-        <input type="number" name="phone" id="zip" minlength="5" maxlength="5" required><br></p>
+        <input type="number" name="phone" id="zip" required><br></p>
 
         </fieldset>
 
@@ -60,15 +60,14 @@
             <p><label for="date">Storm Date: </label><br>
             <input type="date" name="date" id="date" required><br></p>
 
-            <p><label for="type">Storm Type <br>
+            <p><label> for="type">Storm Type <br>
             <input list="stormtypes" id="type">
             <datalist id="stormtypes">
                 <option value="Flood">
                 <option value="Hurricane">
                 <option value="Thunderstorm">
                 <option value="Tornado">
-            </datalist><br></p>
-        </label>
+            </datalist><br></label></p>
 
             <p><label class="flexly" for="ranged">Range &nbsp;&nbsp;&nbsp;</label>
                 <input type="range" id="ranged" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
@@ -96,14 +95,14 @@
                 <option value="soda springs">Soda Springs</option>
                 <option value="fish haven">Fish Haven</option>
             </select></p>
-        </fieldset></p>
+        </fieldset>
 
             <p><fieldset>
                 <legend>User In Danger?</legend>
                 <div class="radio">
                 
                 <input type="radio" name="boolean" id="boolean" value="yes" >
-                <label for="boolean">Yes</lable>
+                <label> for="boolean">Yes</lable>
             </div>
             <div class="radio">
                 
