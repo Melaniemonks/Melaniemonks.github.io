@@ -39,95 +39,97 @@
 
     <main>
 
-    <form action="https://melaniemonks.github.io/lesson8/action.html">
-        <h2>Storm Report Center </h2>
-
-        <fieldset>
-            <legend> Personal Information</legend>
-            <label for="name">Enter your name: </label><br>
-        <input type="text" name="fname" id="name" required><br>
-        <p><label for="email">Email: </label><br>
-        <input type="text" name="email" id="email" placeholder="example@email.com" required><br></p>
-        <p><label for="phone">Phone Number: </label><br>
-        <input type="tel" name="phone" id="phone"><br></p>
-        <p><label for="zip">Zip Code: </label><br>
-        <input type="number" name="phone" id="zip" required><br></p>
-
-        </fieldset>
-
-        <p><fieldset>
-            <legend>Weather info</legend>
-            <p><label for="date">Storm Date: </label><br>
-            <input type="date" name="date" id="date" required><br></p>
-
-            <p><label> for="type">Storm Type <br>
-            <input list="stormtypes" id="type">
-            <datalist id="stormtypes">
-                <option value="Flood">
-                <option value="Hurricane">
-                <option value="Thunderstorm">
-                <option value="Tornado">
-            </datalist><br></label></p>
-
-            <p><label class="flexly" for="ranged">Range &nbsp;&nbsp;&nbsp;</label>
-                <input type="range" id="ranged" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span id="rangevalue">5</span>
-           
-    
-            <datalist id="tickmarks">
-                <option value="0">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-                <option value="6">
-                <option value="7">
-                <option value="8">
-                <option value="9">
-                <option value="10">
-            </datalist></p>
-            
-            <p><label for="region">Storm Region</label>
-            <select id="region" name="region" required>
-                <option value="">Select Region... </option>
-                <option value="preston">Preston</option>
-                <option value="soda springs">Soda Springs</option>
-                <option value="fish haven">Fish Haven</option>
-            </select></p>
-        </fieldset>
+        <form action="https://melaniemonks.github.io/lesson8/action.html">
+            <h2>Storm Report Center </h2>
 
             <fieldset>
-                <legend>User In Danger?</legend>
-                <div class="radio">
-                
-                <input type="radio" name="boolean" id="boolean" value="yes" >
-                <label for="boolean">Yes</lable>
-                </div>
-            
-            <div class="radio">
-                
-                <input type="radio" name="boolean" id="boolean1" value="no" required >
-                <label for="boolean1">No</label>
-            </div>
+                <legend> Personal Information</legend>
+                <label for="name">Enter your name: </label><br>
+                <input type="text" name="fname" id="name" required><br>
+                <p><label for="email">Email: </label><br>
+                    <input type="text" name="email" id="email" placeholder="example@email.com" required><br></p>
+                <p><label for="phone">Phone Number: </label><br>
+                    <input type="tel" name="phone" id="phone"><br></p>
+                <p><label for="zip">Zip Code: </label><br>
+                    <input type="number" name="phone" id="zip" required><br></p>
+
             </fieldset>
 
-            <fieldset>
-                <legend>Addional Information</legend>
-                <label for="information">Please provide any other helpful inforamation in the area below</label><br>
-                <textarea name="message" rows="5" cols="20" id="information"></textarea>
-            </fieldset>
-            
-            <section class="button">
-                <button>Report</button>
+            <p>
+                <fieldset>
+                    <legend>Weather info</legend>
+                    <p><label for="date">Storm Date: </label><br>
+                        <input type="date" name="date" id="date" required><br></p>
+
+                    <p><label> for="type">Storm Type <br>
+                            <input list="stormtypes" id="type">
+                            <datalist id="stormtypes">
+                                <option value="Flood">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                            </datalist><br></label></p>
+
+                    <p><label class="flexly" for="ranged">Range &nbsp;&nbsp;&nbsp;</label>
+                        <input type="range" id="ranged" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="rangevalue">5</span>
+
+
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist></p>
+
+                    <p><label for="region">Storm Region</label>
+                        <select id="region" name="region" required>
+                            <option value="">Select Region... </option>
+                            <option value="preston">Preston</option>
+                            <option value="soda springs">Soda Springs</option>
+                            <option value="fish haven">Fish Haven</option>
+                        </select></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>User In Danger?</legend>
+                    <div class="radio">
+
+                        <input type="radio" name="boolean" id="boolean" value="yes">
+                        <label for="boolean">Yes</label>
+                    </div>
+
+                    <div class="radio">
+
+                        <input type="radio" name="boolean" id="boolean1" value="no" required>
+                        <label for="boolean1">No</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Addional Information</legend>
+                    <label for="information">Please provide any other helpful inforamation in the area below</label><br>
+                    <textarea name="message" rows="5" cols="20" id="information"></textarea>
+                </fieldset>
+
+                <section class="button">
+                    <button>Report</button>
                 </section>
 
-            </form>
-            
-        </main>
-        
+        </form>
 
-        
+    </main>
+
+
+
 
     <footer>
         <section class='locationMap'><img src="images/preston.png" alt='location of preston idaho on map'></section>
