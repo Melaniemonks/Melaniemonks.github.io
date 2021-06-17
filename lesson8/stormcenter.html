@@ -59,14 +59,16 @@
             <legend>Weather info</legend>
             <p><label for="date">Storm Date: </label><br>
             <input type="date" name="date" id="date" required><br></p>
-            <p><label for="type">Storm Type: </label><br>
-            <input list="stormtypes">
+
+            <p><label for="type">Storm Type <br>
+            <input list="stormtypes" >
             <datalist id="stormtypes">
                 <option value="Flood">
                 <option value="Hurricane">
                 <option value="Thunderstorm">
                 <option value="Tornado">
             </datalist><br></p>
+        </label>
 
             <p><label class="flexly" for="ranged">Range &nbsp;&nbsp;&nbsp;</label>
                 <input type="range" id="ranged" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
@@ -112,8 +114,8 @@
 
             <fieldset>
                 <legend>Addional Information</legend>
-                <label>Please provide any other helpful inforamation in the area below</label><br>
-                <textarea name="message" rows="5" cols="20"></textarea>
+                <label for="information">Please provide any other helpful inforamation in the area below</label><br>
+                <textarea name="message" rows="5" cols="20" id="information"></textarea>
             </fieldset>
             
             <section class="button">
