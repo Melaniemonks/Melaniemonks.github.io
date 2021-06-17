@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <title>Document</title>
 </head>
 
 <body>
+
     <header>
         <section class="top">
             <img class="logo" src="images/icon.png" alt="logobox">
@@ -35,39 +37,41 @@
         </nav>
     </header>
 
-    <form>
-        <p>this is the form</p>
+    <main>
+
+    <form action="">
+        <h2>Storm Report Center </h2>
 
         <fieldset>
             <legend> Personal Information</legend>
             <label for="name">Enter your name: </label><br>
         <input type="text" name="fname" id="name" required><br>
-        <label for="email">Email: </label><br>
-        <input type="text" name="email" id="email" placeholder="example@email.com" required><br>
-        <label for="phone">Phone Number: </label><br>
-        <input type="tel" name="phone" id="phone"><br>
-        <label for="zip">Zip Code: </label><br>
-        <input type="number" name="phone" id="zip" minlength="5" maxlength="5" required><br>
+        <p><label for="email">Email: </label><br>
+        <input type="text" name="email" id="email" placeholder="example@email.com" required><br></p>
+        <p><label for="phone">Phone Number: </label><br>
+        <input type="tel" name="phone" id="phone"><br></p>
+        <p><label for="zip">Zip Code: </label><br>
+        <input type="number" name="phone" id="zip" minlength="5" maxlength="5" required><br></p>
 
         </fieldset>
 
-        <fieldset>
+        <p><fieldset>
             <legend>Weather info</legend>
-            <label for="date">Storm Date: </label><br>
-            <input type="date" name="date" id="date" required><br>
-            <label for="type">Storm Type: </label><br>
+            <p><label for="date">Storm Date: </label><br>
+            <input type="date" name="date" id="date" required><br></p>
+            <p><label for="type">Storm Type: </label><br>
             <input list="stormtypes">
             <datalist id="stormtypes">
                 <option value="Flood">
                 <option value="Hurricane">
                 <option value="Thunderstorm">
                 <option value="Tornado">
-            </datalist>
+            </datalist><br></p>
 
-            <label class="flexly" for="range">Range: &nbsp;&nbsp;&nbsp;
-                <input type="range" id="range" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <p><label class="flexly" for="ranged">Range &nbsp;&nbsp;&nbsp;</label>
+                <input type="range" id="ranged" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="rangevalue">5</span>
-            </label>
+           
     
             <datalist id="tickmarks">
                 <option value="0">
@@ -81,10 +85,45 @@
                 <option value="8">
                 <option value="9">
                 <option value="10">
-            </datalist>
-    
+            </datalist></p>
+            
+            <p><label for="region">Storm Region</label>
+            <select id="region" name="region" required>
+                <option value="">Select Region... </option>
+                <option value="preston">Preston</option>
+                <option value="soda springs">Soda Springs</option>
+                <option value="fish haven">Fish Haven</option>
+            </select></p>
+        </fieldset></p>
 
-        </fieldset>
+            <p><fieldset>
+                <legend>User In Danger?</legend>
+                <div class="radio">
+                
+                <input type="radio" name="boolean" id="boolean" value="yes" >
+                <label for="boolean">Yes</lable>
+            </div>
+            <div class="radio">
+                
+                <input type="radio" name="boolean" id="boolean1" value="no" required >
+                <label for="boolean1">No</label>
+            </div>
+            </fieldset></p>
+
+            <fieldset>
+                <legend>Addional Information</legend>
+                <label>Please provide any other helpful inforamation in the area below</label><br>
+                <textarea name="message" rows="5" cols="20"></textarea>
+            </fieldset>
+            
+            <section class="button">
+                <button>Report</button>
+                </section>
+
+            </form>
+            
+        </main>
+        
 
         
 
@@ -108,6 +147,7 @@
             </ul>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 
 </body>
 
