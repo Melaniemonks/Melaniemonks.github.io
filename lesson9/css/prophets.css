@@ -1,0 +1,57 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color: darkcyan;
+    text-align: center;
+    padding:.5rem;
+    border: 1px solid black;
+}
+
+h1{
+    font-size:3rem;
+    font-family: 'Staatliches', cursive;
+}
+
+h2{
+    font-family: 'Staatliches', cursive;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    background-color: rgb(209, 209, 209);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+section{
+    border: 1px solid white;
+    text-align: center;
+    padding:.3rem;
+    background-color: darksalmon;
+}
+
+img{
+    width:70%;
+}
+
+@media only screen and (min-width: 32.5em) {
+   .cards{
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+@media only screen and (min-width: 60em) {
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+ }
