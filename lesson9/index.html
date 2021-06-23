@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section class="top">
+            <img class="logo" src="images/icon.png" alt="logobox">
+            <section class="sitename">
+                <h1>Weather Viewz</h1>
+                <div class="motto">We bring the latest weather to you at a touch!</div>
+            </section>
+        </section>
+
+        <nav class="clearfix">
+
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul class="navigation" id="navo">
+
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="individual"></div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Melanie Monkurai | Idaho | <a href="https://www.byui.edu/online">BYUI Online
+            Learning </a><br>
+        <section class="update">Last modified: <span id="lastmod"></span></section>
+    </footer>
+    
+</body>
+</html>
