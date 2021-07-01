@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/lazy.css">
+    <title>Lazy Loading</title>
+    
 </head>
 <body>
-    
+    <main>
+        <h1>Progressive Image Loading</h1>
+        <picture>
+            <img src='images/placeholder.png' data-src='images/one.jpg' alt='NAME'>
+        </picture>
+        <picture>
+            <img src='images/placeholder.png' data-src='images/two.jpg' alt='NME'>
+
+        </picture>
+        <picture>
+            <img src='images/placeholder.png' data-src='images/three.jpg' alt='AME'>
+        </picture>
+        <picture>
+            <img src='images/placeholder.png' data-src='images/four.jpg' alt='NAM'>
+        </picture>
+        <picture>
+            <img src='images/placeholder.png' data-src='images/five.jpg' alt='NAE'>
+        </picture>
+    </main>
+
+    <script src="js/lazy.js"></script>
 </body>
 </html>
