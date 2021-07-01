@@ -43,6 +43,7 @@ let completeDate = day + ', ' + date.getDate() + ' ' + months + ' ' + year;
 document.querySelector('#presentDate').textContent = completeDate;
 
 
+
 let temp = document.querySelector('.high').textContent;
 let sped = document.querySelector('.humidity').textContent;
 
