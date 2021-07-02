@@ -3,8 +3,6 @@ body {
     padding-bottom: 0;
 }
 
-/*header-----------------------------*/
-
 h1,
 h2,
 h3,
@@ -14,6 +12,32 @@ h6,
 li a {
     font-family: 'Raleway', sans-serif;
 }
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#pancake {
+    background-color: rgb(236, 236, 234);
+    padding: .5rem;
+    text-align: center;
+    border: 1px solid black;
+    display: none;
+}
+
+#pancake span {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#pancake .cake {
+    font-size: 30px;
+}
+
+#pancake p {
+    color: #38839e;
+}
+
 
 .top {
     display: flex;
@@ -112,6 +136,8 @@ nav button {
 
 
 
+
+
 /*Form design--------------Main*/
 main {
     margin: 0 auto;
@@ -194,7 +220,6 @@ form .button{
 
 button{
     padding:.7rem;
-    font-weight: bolder;
     font-size: 25px;
     background-color: rgb(190, 190, 253);
     box-shadow: 2px 3px rgb(82, 81, 81);

@@ -1,3 +1,8 @@
+function toggleMenu() {
+
+    document.getElementById("navo").classList.toggle("navigation");
+}
+
 function adjustRating(ranged) {
     document.getElementById("rangevalue").innerHTML = ranged;
 }

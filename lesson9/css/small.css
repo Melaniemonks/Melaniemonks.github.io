@@ -1,8 +1,6 @@
-body{
-    
+body {
     margin: 0 auto;
     padding-bottom: 0;
-    max-width: 1375px;
 }
 
 h1,
@@ -18,6 +16,7 @@ li a {
 p {
     font-family: 'Quicksand', sans-serif;
 }
+
 #pancake {
     background-color: rgb(236, 236, 234);
     padding: .5rem;
@@ -43,15 +42,10 @@ p {
 .top {
     display: flex;
     flex-direction: column;
-    
     /*for large view change to row*/
     align-items: center;
     justify-content: center;
     background-color: #38839e;
-}
-
-.logo{
-    width: 80px;
 }
 
 /*reduce Image size. Increase size in large view8/
@@ -62,8 +56,8 @@ p {
 /*Decorate the site name H1*/
 h1 {
     text-align: center;
-    font-size: 25px;
-    color: black;
+    font-size: xx-large;
+    color: rgba(224, 226, 215, 255);
     text-shadow: 2px 2px 4px rgb(129, 128, 128);
 
 }
@@ -139,6 +133,8 @@ nav button {
 .sitename {
     margin-top: -2rem;
 }
+
+
 
 /*Main*/
 main{
