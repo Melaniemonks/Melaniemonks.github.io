@@ -1,23 +1,25 @@
 @media only screen and (min-width: 32.5em) {
-    nav button{
-        display:none;
+    nav button {
+        display: none;
     }
 
-    .top{
-        flex-direction:row; /*for large view change to row*/
+    .top {
+        flex-direction: row;
+        /*for large view change to row*/
         margin-bottom: -1rem;
     }
 
-    .sitename{
+    .sitename {
         margin-bottom: -2rem;
     }
 
-    h1{
+    h1 {
         text-align: center;
         margin-bottom: -1rem;
         font-size: 50px;
     }
-    .motto{
+
+    .motto {
         padding: .9rem;
         margin-top: 0;
         text-align: center;
@@ -25,44 +27,76 @@
 
     }
 
-    .logo{
+    .logo {
         width: 200px;
-     }
+    }
 
 
-    #navo{
-        display:flex;
-        justify-content:center;
-        
-      
+    #navo {
+        display: flex;
+        justify-content: center;
+
+
     }
 
     nav ul li {
-        width:200px;
+        width: 200px;
     }
 
     nav ul.hide {
-        display:flex;
+        display: flex;
     }
 
 
     /*Start Editing from here*/
-    main{
+    main {
         padding-left: 7rem;
         padding-right: 7rem;
     }
 
+    #separation {
+        position: relative;
+    }
+
+    .summary {
+        position: absolute;
+        padding: 1rem;
+        top: .1rem;
+        /*use in large*/
+        left: 1rem;
+        /*use in large*/
+        border: .2rem solid rgb(32, 31, 31);
+        border-width: thin;
+        background-color: rgba(181, 191, 180, 255);
+        opacity: .8;
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: center;
+        
+        
+
+    }
 
     
+    .summary p {
+        margin:.2rem;
+    }
+
+    .data span{
+        font-size: 20rem;
+    }
+
+
+
     /*article*/
-article img{
-    float:right;
-    width:30%;
-}
+    article img {
+        float: right;
+        width: 50%;
+    }
 
-footer{
-    flex-direction: row;
+    footer {
+        flex-direction: row;
 
-}
+    }
 
 }

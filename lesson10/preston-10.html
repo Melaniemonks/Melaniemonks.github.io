@@ -55,16 +55,19 @@
         <h2>Preston idaho</h2>
 
         <div id="separation">
-
-            <img src="images/firstimage.jpg" alt="Photo of blue sky and a lake">
-
+            <picture class="pics">
+                <source srcset="images/front.jpg" media="(min-width: 649px)">
+            <img src="images/front1.jpg" alt="Photo of blue sky and a lake">
+            </picture>
             <section class="summary">
+                <div class='data'>
                 <h3>Weather summary</h3>
-                <section class="left">Currently: <span class="right">Sunny</span></section>
-                <section class="left">High:<span class="right">76</span></section>
-                <section class="left">Windchill: <span class="right">F</span></section>
-                <section class="left">Humidity: <span class="right">69%</span></section>
-                <section class="left">Wind Speed:<span class="right">5mph</span> </section>
+                <p>Condition: <span id="condition">Sunny</span></p>
+                <p>Current-temp: <span id="temp"></span>&deg; F</p>
+                <p>Windchill: <span id ="winchill"></span>&deg; F</p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed:<span id="windspeed"></span>mph </p>
+            </div>
             </section>
         </div>
 
@@ -72,37 +75,42 @@
             <h3>Weekly Predictions</h3>
             <div class="flex">
                 <div class="box">
-                    <span class="topp">Monday</span>
-                    <img src="images/sunny.png" alt="sunny sky!">
-                    <span class="data">Insert Data</span>
+                    <span class="topp" id="day1"></span>
+                    <img src="" alt="" id="icon1">
+                    <p><span id='forecast1' class="data"></span>&deg; F</p>
                 </div>
                 <div class="box">
-                    <span class="topp">Tuesday</span>
-                    <img src="images/sunny.png" alt="sunny sky!">
-                    <span class="data">Insert data</span>
+                    <span class="topp" id='day2'></span>
+                    <img src="" alt="" id="icon2">
+                    <p><span class="data" id='forecast2'></span>&deg; F</p>
                 </div>
                 <div class="box">
-                    <span class="topp">Wednesday</span>
-                    <img src="images/sunny.png" alt="sunny sky!">
-                    <span class="data">Insert Data</span>
+                    <span class="topp" id="day3"></span>
+                    <img src="" alt="" id='icon3'>
+                    <p><span class="data" id='forecast3'></span>&deg; F</p>
                 </div>
                 <div class="box">
-                    <span class="topp">Thursday</span>
-                    <img src="images/sunny.png" alt="sunny sky!">
-                    <span class="data">Insert Data</span>
+                    <span class="topp" id="day4"></span>
+                    <img src="" alt="" id = 'icon4'>
+                    <p><span class="data" id='forecast4'></span>&deg; F</p>
                 </div>
                 <div class="box">
-                    <span class="topp">Friday</span>
-                    <img src="images/sunny.png" alt="sunny sky!">
-                    <span class="data">Insert Data</span>
+                    <span class="topp" id="day5"></span>
+                    <img src="" alt="" id='icon5'>
+                    <p><span class="data" id='forecast5'></span>&deg; F</p>
                 </div>
             </div>
         </div>
 
         <section class="article">
-            <h3>News Article </h3>
+            <div class= heading3>
+                <h3>It's Summer!!! 10 places to see in Preston Idaho </h3>
+                <h4>By: Harold Monkurai</h4>
+                <h5>7/2/2021</h5>
+            </div>
             <article>
-                <img class="articleimg" src="images/snow.jpg" alt="man with umbrella in snow">
+
+                <div class='artdiv'><img class="articleimg" src="images/article.jpg" alt="man with umbrella in snow"></div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta laborum error cupiditate libero
                     ipsam ea quidem sunt blanditiis doloremque laboriosam nobis eligendi quis soluta recusandae
                     voluptatem
@@ -140,7 +148,8 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forecast.js"></script>
 </body>
     
 

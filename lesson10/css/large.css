@@ -8,11 +8,10 @@
 .weatherpred {
     display:inherit;
     padding: 1rem;
-    background-color: rgb(134, 136, 143);
     width: 80%;
     margin: 0 auto;
     margin-top: 3rem;
-    box-shadow: 5px 10px #414040;
+    box-shadow: 5px 10px 4px #414040;
 }
     
 
@@ -58,6 +57,7 @@
     background-color:rgba(224,226,215,255) ;
     padding: .8rem;
     border-radius: .5rem;
+    border-bottom: 2px double black;
 }
 
 .data {
@@ -69,7 +69,7 @@
 
 /*article*/
 article img{
-    width: 20%;
+    width: 30%;
 }
 
 article p{
