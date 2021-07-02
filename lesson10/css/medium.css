@@ -83,7 +83,12 @@
     }
 
     .data span{
-        font-size: 20rem;
+        font-size: 1rem;
+    }
+
+    .data #temp{
+        font-size: 2rem;
+        color: rgb(247, 59, 59);
     }
 
 
