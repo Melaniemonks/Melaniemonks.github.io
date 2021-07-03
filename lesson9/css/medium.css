@@ -59,9 +59,30 @@
     .info{
         display:grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
 
         
               
+    }
+
+   
+
+    .info:nth-child(odd) .image1size {
+        grid-column: 2;
+    }
+
+    .info:nth-child(odd) .writings {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .writings{
+        font-size: .8rem;
+    }
+
+    .info img{
+        width: 300px;
+        height: 200px;
     }
 
 

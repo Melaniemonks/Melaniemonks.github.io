@@ -17,6 +17,18 @@
 
     }
 
+    .info:nth-child(odd) .image1size {
+        grid-column: 1;
+    }
+
+    .info:nth-child(odd) .writings {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .info img{
+        width: 100%;
+    }
     .info {
         grid-template-columns: 1fr;
     }
