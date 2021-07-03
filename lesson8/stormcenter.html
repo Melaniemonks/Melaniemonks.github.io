@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:ital,wght@0,200;0,400;1,400&display=swap"
+        rel="stylesheet">
     <title>Storm Center</title>
 </head>
 
@@ -46,8 +49,8 @@
 
             <fieldset>
                 <legend> Personal Information</legend>
-                <label for="name">Enter your name: </label><br>
-                <input type="text" name="fname" id="name" required><br>
+                <p><label for="name">Enter your name: </label><br>
+                <input type="text" name="fname" id="name" required><br></p>
                 <p><label for="email">Email: </label><br>
                     <input type="text" name="email" id="email" placeholder="example@email.com" required><br></p>
                 <p><label for="phone">Phone Number: </label><br>
@@ -99,31 +102,29 @@
                             <option value="soda springs">Soda Springs</option>
                             <option value="fish haven">Fish Haven</option>
                         </select></p>
+                         
+                        <p><legend>User In Danger?</legend>
+                        <div class="radio">
+
+                            <input type="radio" name="boolean" id="boolean" value="yes">
+                            <label for="boolean">Yes</label>
+                        </div>
+    
+                        <div class="radio">
+    
+                            <input type="radio" name="boolean" id="boolean1" value="no" required>
+                            <label for="boolean1">No</label>
+                        </div></p>
+
+                        <p>
+                            <legend>Addional Information</legend>
+                            <p><label class="help"for="information">Please provide any other helpful inforamation in the area below</label><br></p>
+                            <textarea name="message" rows="5" cols="20" id="information"></textarea>  
+                        </p>
                 </fieldset>
 
-                <fieldset>
-                    <legend>User In Danger?</legend>
-                    <div class="radio">
-
-                        <input type="radio" name="boolean" id="boolean" value="yes">
-                        <label for="boolean">Yes</label>
-                    </div>
-
-                    <div class="radio">
-
-                        <input type="radio" name="boolean" id="boolean1" value="no" required>
-                        <label for="boolean1">No</label>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Addional Information</legend>
-                    <label for="information">Please provide any other helpful inforamation in the area below</label><br>
-                    <textarea name="message" rows="5" cols="20" id="information"></textarea>
-                </fieldset>
-
-                <section class="button">
-                    <button>Report</button>
+                <section class="move"> 
+                    <button class="button">Report</button>
                 </section>
 
         </form>
@@ -134,23 +135,30 @@
 
 
     <footer>
-        <section class='locationMap'><img src="images/preston.png" alt='location of preston idaho on map'></section>
+        <section class='locationMap'><img src="images/prestonloc.png" alt='location of preston idaho on map'></section>
         <div class="social">
-            <h3>Contact Us</h3>
-            <p>TEXT: (208) 234-5678<br>
-                CALL: (208) 234-5678<br>
-                Mail: weatherviewz@email.com</p>
 
-            &copy;<span id="presentDate"></span> | Melanie Monkurai <br>
-            <ul>
-                <li><a href="www.facebook.com">
-                        <img src="images/facebook.png" alt="link to facebook page"></a>
-                    <a href="www.instagram.com">
-                        <img src="images/Instagram.png" alt="link to instagram"></a>
-                    <a href="www.twitter.com">
-                        <img src="images/twitter.png" alt="link to twitter"></a>
-                </li>
-            </ul>
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <p>TEXT: (208) 234-5678<br>
+                    CALL: (208) 234-5678<br>
+                    Mail: weatherviewz@email.com<br>
+                    &copy;<span id="presentDate"></span> | Melanie Monkurai <br></p>
+            </section>
+
+            <section class='online'>
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="www.facebook.com">
+                            <img src="images/facebook.png" alt="link to facebook page"></a>
+                        <a href="www.instagram.com">
+                            <img src="images/Instagram.png" alt="link to instagram"></a>
+                        <a href="www.twitter.com">
+                            <img src="images/twitter.png" alt="link to twitter"></a>
+                    </li>
+                </ul>
+            </section>
+
         </div>
     </footer>
     <script src="js/script.js"></script>

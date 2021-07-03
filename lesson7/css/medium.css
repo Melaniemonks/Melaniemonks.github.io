@@ -64,9 +64,13 @@
 
 
    
-footer{
-    flex-direction: row;
-
-}
+    footer{
+        flex-direction: row;
+    
+    }
+    
+    .social img {
+        width: 10%;
+    }
 
 }

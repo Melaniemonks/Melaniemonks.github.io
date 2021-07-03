@@ -265,3 +265,9 @@ footer a {
     text-decoration: none;
 
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

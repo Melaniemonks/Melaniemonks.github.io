@@ -99,9 +99,9 @@
         width: 50%;
     }
 
-    footer {
-        flex-direction: row;
-
+    
+    .social img {
+        width: 10%;
     }
 
 }

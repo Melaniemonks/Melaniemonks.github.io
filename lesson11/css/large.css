@@ -73,4 +73,9 @@ article img{
 article p{
     padding:.5rem;
 }
+
+footer {
+    grid-template-columns: 1fr 1fr;
+}
+
 }

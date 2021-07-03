@@ -193,13 +193,13 @@ footer {
     background-color: #38839e;
     text-align: center;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     border-top: 1px solid black;
 }
 
 .locationMap img {
-    width: 100%;
+    max-width: 100%;
     box-shadow: 5px 10px black;
 }
 
@@ -207,8 +207,16 @@ footer {
     justify-content: center;
 }
 
+.social h3{
+    border-bottom: 3px double black;
+}
+
 .social {
     list-style-type: none;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
 }
 
 .social ul{
@@ -216,29 +224,17 @@ footer {
 }
 
 .social img {
-    width: 9%;
+    width: 15%;
+}
+
+.online ul{
+    padding:0;
 }
 
 .social li {
     padding-top: 1rem;
 }
 
-
 footer a {
     color: black;
-}
-
-footer a:visited {
-    color: blue;
-}
-
-footer a {
-    text-decoration: none;
-
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
 }
