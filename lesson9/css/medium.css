@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45.5em) {
+@media only screen and (min-width: 33.5em) {
     nav button{
         display:none;
     }
@@ -48,49 +48,31 @@
 
 
     /*Start Editing from here*/
+
     main{
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     
 
-    
-    .info {
-     flex-direction: column;
-    padding: 1rem;
-    margin:.55rem;
-    border: 1px solid black;
+    .info{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+
+        
+              
     }
-
-    .info:nth-child(even){
-        flex-direction: column;
-    }
-
-
-    .image1size{
-    width: 90%;
-    box-shadow: 5px 5px 5px 5px grey;  
-    }
-
-    .individual{
-        flex-direction: row;
-    }
-
-    div.writings{
-        font-size: 15px;
-        width: 95%;
-        height: 100%;
-
-    
-    }
-
 
 
 
 footer{
     flex-direction: row;
 
+}
+
+.social img {
+    width: 10%;
 }
 
 }

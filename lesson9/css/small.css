@@ -142,7 +142,7 @@ main{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
-    background-color:rgba(224,226,215,255) ;
+    background-color:rgba(224, 226, 215, 255) ;
     
     
 }
@@ -155,53 +155,41 @@ picture img{
 
 h2{
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 3px double black;
     
 }
 
 /*start here*/
 .individual{
-    display:flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: auto;
+    max-width: 100%;
+    
+    
 }
 
+.individual .info{
+    margin: .6rem;
+    padding: 1rem;
+    box-shadow: 4px 5px 5px 4px ;
+    background-color:#38839e ;
+    max-width:100%;
+    
+    
+}
+
+.info .image1size{
+    max-width:100%;
+    box-shadow: 3px 3px 9px 5px black;
+    
+}
 
 .writings{
-    width: 100%;
-    font-size:10px;
     padding:.5rem;
-    flex-wrap: wrap;
-    background-color: rgb(204, 199, 199);
-    border-top: 1px solid black;
-    
+    text-align: center;
+    max-width: 100%;
 }
-
-.info:nth-child(even){
-    flex-direction: row-reverse;
-}
-
-
-.info {
-    display:flex;
-    align-items: center;
-    padding: .5rem;
-}
-
-.image1size{
-    width:90px;
-    padding: .9rem;
-    box-shadow: 5px 10px grey ;
-
-    
-}
-
-.text{
-    margin-top: 1rem;
-    border-top:1px solid black ;
-    background-color: rgb(243, 241, 241);
-    padding: 1rem;
-}
-
 
 
 
@@ -213,13 +201,13 @@ footer {
     background-color: #38839e;
     text-align: center;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     border-top: 1px solid black;
 }
 
 .locationMap img {
-    width: 100%;
+    max-width: 100%;
     box-shadow: 5px 10px black;
 }
 
@@ -227,8 +215,16 @@ footer {
     justify-content: center;
 }
 
+.social h3{
+    border-bottom: 3px double black;
+}
+
 .social {
     list-style-type: none;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
 }
 
 .social ul{
@@ -236,7 +232,11 @@ footer {
 }
 
 .social img {
-    width: 9%;
+    width: 15%;
+}
+
+.online ul{
+    padding:0;
 }
 
 .social li {

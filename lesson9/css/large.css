@@ -1,8 +1,28 @@
 @media only screen and (min-width: 60em) {
-    
-   .info{
-       padding:0;
-       }
-   }
+
+    .info {
+        padding: 0;
+    }
+
+    main{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
 
 
+    .individual {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
