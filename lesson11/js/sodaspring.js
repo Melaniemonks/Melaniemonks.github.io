@@ -11,13 +11,11 @@ function toggleMenu() {
 }
 
 
-  /*preston*/
-
-  const apiURLF = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=c2bccc72d71af873e9f74670c57bda56";
-const apiURLWF = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=41aad7e86df21cc463e072f37de54050";
+const apiURLS = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=d58e26da4d9671ca99e0fbab6d30fb96";
+const apiURLWS = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=41aad7e86df21cc463e072f37de54050";
 
 
-fetch(apiURLWF)
+fetch(apiURLWS)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
@@ -52,7 +50,7 @@ fetch(apiURLWF)
 
 
 
-fetch(apiURLF)
+fetch(apiURLS)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
