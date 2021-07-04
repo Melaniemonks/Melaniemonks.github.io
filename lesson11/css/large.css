@@ -2,7 +2,34 @@
     /*Start Editing from here*/
     
 
-    /*Weather prediction*/
+    /*Homepage*/
+    .individual {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+    }
+
+    .info:nth-child(odd) .image1size {
+        grid-column: 1;
+    }
+
+    .info:nth-child(odd) .writings {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .info img{
+        width: 100%;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    /*Weather prediction for town pages*/
+
+    /*large for towns*/
+
 .weatherpred {
     display:inherit;
     padding: 1rem;
@@ -65,7 +92,7 @@
 	text-align: center;
 }
 
-/*article*/
+/*article for town pages*/
 article img{
     width: 30%;
 }
@@ -73,6 +100,30 @@ article img{
 article p{
     padding:.5rem;
 }
+
+/*gallery*/
+div.gallery  {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+main{
+    
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+/*Storm Center*/
+
+form{
+    width:700px;
+}
+
+
 
 footer {
     grid-template-columns: 1fr 1fr;

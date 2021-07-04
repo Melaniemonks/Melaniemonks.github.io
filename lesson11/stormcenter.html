@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather viewz storm center containg form for a weather report">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:ital,wght@0,200;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <title>Storm Center</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="top">
+            <img class="logo" src="images/icon.png" alt="logobox">
+            <section class="sitename">
+                <h1>Weather Viewz</h1>
+                <div class="motto">We bring the latest weather to you at a touch!</div>
+            </section>
+        </section>
+
+        <nav class="clearfix">
+
+            <button  onclick="toggleMenu()">&#9776; Menu</button>
+            <ul class="navigation" id="navo">
+
+                <li><a href="https://melaniemonks.github.io/lesson9/index.html">Home</a></li>
+                <li><a href="https://melaniemonks.github.io/lesson10/preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="https://melaniemonks.github.io/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a href="https://melaniemonks.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://melaniemonks.github.io/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <form action="https://melaniemonks.github.io/lesson8/action.html">
+            <h2>Storm Report Center </h2>
+
+            <fieldset>
+                <legend> Personal Information</legend>
+                <p><label for="name">Enter your name: </label><br>
+                <input type="text" name="fname" id="name" required><br></p>
+                <p><label for="email">Email: </label><br>
+                    <input type="text" name="email" id="email" placeholder="example@email.com" required><br></p>
+                <p><label for="phone">Phone Number: </label><br>
+                    <input type="tel" name="phone" id="phone"><br></p>
+                <p><label for="zip">Zip Code: </label><br>
+                    <input type="number" name="phone" id="zip" required><br></p>
+
+            </fieldset>
+
+            <p>
+                <fieldset>
+                    <legend>Weather info</legend>
+                    <p><label for="date">Storm Date: </label><br>
+                        <input type="date" name="date" id="date" required><br></p>
+
+                    <p><label for="type">Storm Type <br>
+                            <input list="stormtypes" id="type">
+                            <datalist id="stormtypes">
+                                <option value="Flood">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                            </datalist><br></label></p>
+
+                    <p><label class="flexly" for="ranged">Range &nbsp;&nbsp;&nbsp;</label>
+                        <input type="range" id="ranged" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="rangevalue">5</span>
+
+
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist></p>
+
+                    <p><label for="region">Storm Region</label>
+                        <select id="region" name="region" required>
+                            <option value="">Select Region... </option>
+                            <option value="preston">Preston</option>
+                            <option value="soda springs">Soda Springs</option>
+                            <option value="fish haven">Fish Haven</option>
+                        </select></p>
+                         
+                        <p><legend>User In Danger?</legend>
+                        <div class="radio">
+
+                            <input type="radio" name="boolean" id="boolean" value="yes">
+                            <label for="boolean">Yes</label>
+                        </div>
+    
+                        <div class="radio">
+    
+                            <input type="radio" name="boolean" id="boolean1" value="no" required>
+                            <label for="boolean1">No</label>
+                        </div></p>
+
+                        <p>
+                            <legend>Addional Information</legend>
+                            <p><label class="help"for="information">Please provide any other helpful inforamation in the area below</label><br></p>
+                            <textarea name="message" rows="5" cols="20" id="information"></textarea>  
+                        </p>
+                </fieldset>
+
+                <section class="move"> 
+                    <button class="button">Report</button>
+                </section>
+
+        </form>
+
+    </main>
+
+
+
+
+    <footer>
+        <section class='locationMap'><img src="images/prestonloc.png" alt='location of preston idaho on map'></section>
+        <div class="social">
+
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <p>TEXT: (208) 234-5678<br>
+                    CALL: (208) 234-5678<br>
+                    Mail: weatherviewz@email.com<br>
+                    &copy;<span id="presentDate"></span> | Melanie Monkurai <br></p>
+            </section>
+
+            <section class='online'>
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="www.facebook.com">
+                            <img src="images/facebook.png" alt="link to facebook page"></a>
+                        <a href="www.instagram.com">
+                            <img src="images/Instagram.png" alt="link to instagram"></a>
+                        <a href="www.twitter.com">
+                            <img src="images/twitter.png" alt="link to twitter"></a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

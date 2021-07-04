@@ -1,4 +1,40 @@
 @media only screen and (min-width: 32.5em) {
+    main{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    /*homepage*/
+    .info{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        
+              
+    }
+
+   
+
+    .info:nth-child(odd) .image1size {
+        grid-column: 2;
+    }
+
+    .info:nth-child(odd) .writings {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .writings{
+        font-size: .8rem;
+    }
+
+    .info img{
+        width: 300px;
+        height: 200px;
+    }
+
+    /* town pages */
     nav button {
         display: none;
     }
@@ -99,9 +135,17 @@
         width: 50%;
     }
 
+    /*Gallery*/
+    div.gallery  {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
     
     .social img {
         width: 10%;
     }
+
+    
 
 }

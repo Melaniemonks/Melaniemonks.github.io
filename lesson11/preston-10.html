@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Weather Viewz page for Preston Idaho which contains latest news about the weather">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:ital,wght@0,200;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <title>Weather Viewz</title>
+</head>
+
+<body>
+    <div id='pancake'>
+        <p><span class='cake'>🥞</span> <span> Wohoo!</span> Preston Pancakes in the Park! 9:00 a.m. Friday
+            at the city park pavilion.</p>
+    </div>
+    <header>
+        <section class="top">
+            <img class="logo" src="images/icon.png" alt="logobox">
+            <section class="sitename">
+                <h1>Weather Viewz</h1>
+                <div class="motto">We bring the latest weather to you at a touch!</div>
+            </section>
+        </section>
+
+        <nav class="clearfix">
+
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul class="navigation" id="navo">
+
+                <li><a href="https://melaniemonks.github.io/lesson9/index.html">Home</a></li>
+                <li class="active"><a href="https://melaniemonks.github.io/lesson10/preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="https://melaniemonks.github.io/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="https://melaniemonks.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://melaniemonks.github.io/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Preston idaho</h2>
+
+        <div id="separation">
+            <picture class="pics">
+                <source srcset="images/front.jpg" media="(min-width: 649px)">
+            <img src="images/front1.jpg" alt="Photo of blue sky and a lake">
+            </picture>
+            <section class="summary">
+                <div class='data'>
+                <h3>Weather summary</h3>
+                <p>Condition: <span id="condition">Sunny</span></p>
+                <p>Current-temp: <span id="temp"></span>&deg; F</p>
+                <p>Windchill: <span id ="winchill"></span>&deg; F</p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed:<span id="windspeed"></span>mph </p>
+            </div>
+            </section>
+        </div>
+
+        <div class="weatherpred">
+            <h3>Weekly Predictions</h3>
+            <div class="flex">
+                <div class="box">
+                    <span class="topp" id="day1"></span>
+                    <img src="#" alt="#" id="icon1">
+                    <p><span id='forecast1' class="data"></span>&deg; F</p>
+                </div>
+                <div class="box">
+                    <span class="topp" id='day2'></span>
+                    <img src="#" alt="#" id="icon2">
+                    <p><span class="data" id='forecast2'></span>&deg; F</p>
+                </div>
+                <div class="box">
+                    <span class="topp" id="day3"></span>
+                    <img src="#" alt="#" id='icon3'>
+                    <p><span class="data" id='forecast3'></span>&deg; F</p>
+                </div>
+                <div class="box">
+                    <span class="topp" id="day4"></span>
+                    <img src=" #" alt="# " id = 'icon4'>
+                    <p><span class="data" id='forecast4'></span>&deg; F</p>
+                </div>
+                <div class="box">
+                    <span class="topp" id="day5"></span>
+                    <img src="#" alt="#" id='icon5'>
+                    <p><span class="data" id='forecast5'></span>&deg; F</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="article">
+            <div class= heading3>
+                <h3>It's Summer!!! 10 places to see in Preston Idaho </h3>
+                <h4>By: Harold Monkurai</h4>
+                <h5>7/2/2021</h5>
+            </div>
+            <article>
+
+                <div class='artdiv'><img class="articleimg" src="images/article.jpg" alt="man with umbrella in snow"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta laborum error cupiditate libero
+                    ipsam ea quidem sunt blanditiis doloremque laboriosam nobis eligendi quis soluta recusandae
+                    voluptatem
+                    officia, accusamus facere?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odit repellendus fuga ratione, ut,
+                    praesentium iusto officia exercitationem deserunt aspernatur voluptatibus eos excepturi nesciunt
+                    reprehenderit tempora porro velit molestiae esse? Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Veritatis soluta ducimus hic cumque omnis atque, perspiciatis, illo facere,
+                    praesntium cupiditate laboriosam minus quibusdam error? Quod accusamus dolor veritatis adipisci
+                    aliquid.</p>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class='locationMap'><img src="images/prestonloc.png" alt='location of preston idaho on map'></section>
+        <div class="social">
+
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <p>TEXT: (208) 234-5678<br>
+                    CALL: (208) 234-5678<br>
+                    Mail: weatherviewz@email.com<br>
+                    &copy;<span id="presentDate"></span> | Melanie Monkurai <br></p>
+            </section>
+
+            <section class='online'>
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="www.facebook.com">
+                            <img src="images/facebook.png" alt="link to facebook page"></a>
+                        <a href="www.instagram.com">
+                            <img src="images/Instagram.png" alt="link to instagram"></a>
+                        <a href="www.twitter.com">
+                            <img src="images/twitter.png" alt="link to twitter"></a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </footer>
+
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forecast.js"></script>
+</body>
+    
+
+</html>
