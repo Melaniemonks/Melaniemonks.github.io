@@ -1,0 +1,16 @@
+body{
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    
+}
+
+header, footer{
+    background-color: grey;
+    padding:.5rem;
+
+}
+
+main{
+    background-color: rgb(65, 53, 59);
+}
