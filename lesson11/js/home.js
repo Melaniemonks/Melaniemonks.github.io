@@ -1,4 +1,17 @@
 /*homepage Js*/
+let thedate = new Date();
+console.thedate
+if (thedate.getDay() == 5) {
+    document.querySelector('#pancake').style.display = 'block';
+}
+
+
+function toggleMenu() {
+
+    document.getElementById("navo").classList.toggle("navigation");
+}
+
+
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
