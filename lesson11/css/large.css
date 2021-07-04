@@ -1,6 +1,16 @@
 @media only screen and (min-width: 60em) {
     /*Start Editing from here*/
     
+    main{
+    
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    
+    .margin{
+        margin-top: -1.7rem;
+    }
+    
 
     /*Homepage*/
     .individual {
@@ -107,11 +117,6 @@ div.gallery  {
     width: 100%;
 }
 
-main{
-    
-    padding-left: 7rem;
-    padding-right: 7rem;
-}
 
 h2{
     font-size: 2rem;

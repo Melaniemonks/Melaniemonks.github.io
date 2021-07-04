@@ -151,6 +151,10 @@ main {
 
 }
 
+.margin{
+    margin-top: -1.3rem;
+}
+
 /*fish haven*/
 picture img {
     width: 100%;
@@ -240,6 +244,11 @@ picture img{
 .info .image1size{
     max-width:100%;
     box-shadow: 3px 3px 9px 5px black;
+    
+}
+
+.towns h2{
+    border-bottom: 3px double black;
     
 }
 
