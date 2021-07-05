@@ -52,7 +52,8 @@
     width: 80%;
     margin: 0 auto;
     margin-top: 3rem;
-    box-shadow: 5px 10px 4px #414040;
+    box-shadow: 5px 10px 9px #414040;
+    border-right: 7px solid #38839e ;
 }
     
 
@@ -80,15 +81,22 @@
    
 }
 
+.box p{
+    font-size: 30px;
+}
+
 .topp{
 	display: block;
 	padding: 3px;
 	text-align: center;
     border-top: 1px solid ;
+    font-family:'Raleway', sans-serif ;
+    font-weight: bolder;
+    font-size:1.8rem;
 }
 
 .weatherpred img {
-	width: 30%;
+	width: 50%;
     border-radius: 100px;
 	padding: 0.25rem;
 }
@@ -99,12 +107,14 @@
     padding: .8rem;
     border-radius: .5rem;
     border-bottom: 2px double black;
+    font-size: 2rem;
 }
 
 .data {
 	display: block;
 	padding: 0 5px 5px;
-	font-size: 0.8rem;
+	font-size:20px;
+    font-weight: bolder;
 	text-align: center;
 }
 
