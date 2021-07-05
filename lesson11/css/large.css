@@ -34,7 +34,13 @@
     }
     .info {
         grid-template-columns: 1fr;
+        margin-top: 0;
+
+
     }
+
+
+
 
     /*Weather prediction for town pages*/
 

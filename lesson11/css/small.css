@@ -260,17 +260,20 @@ picture img{
 .individual{
     display: grid;
     grid-template-columns: 1fr ;
-    margin: auto;
+    margin-top: 1rem;
     max-width: 100%;
+    background-color: #38839e;
+    box-shadow: 1px 2px 3px 4px grey;
     
     
 }
 .individual .info{
     margin: 0 auto;
+    margin-top: 2rem;
     padding: 1rem;
     box-shadow: 4px 5px 5px 4px ;
     background-color: rgb(204, 204, 204);
-    max-width:70%;
+    max-width:80%;
     
     
 }
@@ -281,8 +284,12 @@ picture img{
     
 }
 
-.towns h2{
-    border-bottom: 3px double black;
+.towns{
+    border-top: 5px double #000000;
+    border-bottom: 5px double #000000;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    
     
 }
 
@@ -298,14 +305,14 @@ picture img{
 
 .writings p{
     font-weight: bolder;
-    color:#38839e ;
+    
 }
 
 .text{
     box-shadow: 2px 3px 7px black;
     padding:1rem;
     margin-top:2rem ;
-    border-left: 10px solid rgb(184, 36, 36);
+    border-left: 10px solid #38839e;
 }
 
 .text h3{
