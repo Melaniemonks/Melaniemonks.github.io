@@ -86,8 +86,8 @@ nav button {
 
 nav {
     background-color: rgb(134, 136, 143);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    ;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 nav ul {
@@ -136,7 +136,7 @@ nav button {
 
 
 
-/* main*/
+/* main------------------------------------------------------------------------------*/
 
 h2 {
     text-align: center;
@@ -155,7 +155,9 @@ main {
     margin-top: -1.3rem;
 }
 
-/*fish haven*/
+
+
+/*fish haven-----------------------*/
 picture img {
     width: 100%;
     box-shadow: 5px 10px #888888;
@@ -188,7 +190,7 @@ font-weight: bolder;
     display: none;
 }
 
-/*News Article*/
+/*News Article--------------------*/
 .article {
     padding: 2rem;
     margin-top: 3rem;
@@ -210,7 +212,37 @@ article img {
     box-shadow: 5px 10px #414040;
 }
 
-/*homepage*/
+/*Events--------------*/
+
+.activity{
+    background-color: #38839e;
+    padding:1rem;
+    margin:4rem;
+    border-right: 20px solid rgb(58, 57, 57);
+    border-left: 20px solid rgb(58, 57, 57);
+    box-shadow: 2px 7px 10px 7px rgb(100, 100, 100);
+
+}
+
+.activity h3{
+    color: rgb(10, 10, 10);
+    text-align: center;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 3px 1px black;
+    padding: .5rem;
+    background-color:rgb(218, 214, 214) ;
+    
+}
+
+.activity p{
+    font-weight: bolder;
+    color: rgb(218, 214, 214);
+}
+
+
+
+/*homepage----------------------------------------------------------------------------*/
+
 picture img{
     width:100%;
     box-shadow: 5px 5px 5px 5px grey;
@@ -272,7 +304,7 @@ picture img{
 }
 
 
-/*Gallery*/
+/*Gallery---------------------------------------------------------------------*/
 
 div.gallery  {
     display: grid;
@@ -310,7 +342,7 @@ div.gallery  {
     
 }
 
-/*Storm center*/
+/*Storm center--------------------------------------------------------------------*/
 fieldset{
     padding:1rem;
     border-right: none;

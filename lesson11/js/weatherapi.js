@@ -1,19 +1,19 @@
 let thedate = new Date();
 console.thedate
 if (thedate.getDay() == 5) {
-    document.querySelector('#pancake').style.display = 'block';
+  document.querySelector('#pancake').style.display = 'block';
 }
 
 
 function toggleMenu() {
 
-    document.getElementById("navo").classList.toggle("navigation");
+  document.getElementById("navo").classList.toggle("navigation");
 }
 
 
-  /*preston*/
+/*preston*/
 
-  const apiURLF = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=c2bccc72d71af873e9f74670c57bda56";
+const apiURLF = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=c2bccc72d71af873e9f74670c57bda56";
 const apiURLWF = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=41aad7e86df21cc463e072f37de54050";
 
 
@@ -30,22 +30,22 @@ fetch(apiURLWF)
 
     let t = jsObject.main.temp;
     let ws = jsObject.wind.speed;
-    
+
     function windChill(tempF, speed) {
       if (tempF <= 58 && speed > 3) {
-          let f = 35.74 + (0.6215 * tempF) - (35.75 * (speed ** 0.16)) + (0.4275 * tempF * (speed ** 0.16));
-          return f;
+        let f = 35.74 + (0.6215 * tempF) - (35.75 * (speed ** 0.16)) + (0.4275 * tempF * (speed ** 0.16));
+        return f;
       } else {
-          let f = "N/A";
-          return f;
-  
+        let f = "N/A";
+        return f;
+
       }
-  }
+    }
 
-  let value = windChill(t, ws);
-  
+    let value = windChill(t, ws);
 
-  document.getElementById('winchill').textContent = value;
+
+    document.getElementById('winchill').textContent = value;
 
   });
 
@@ -68,11 +68,11 @@ fetch(apiURLF)
 
     const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let day = 0;
-    
+
 
     //Makes the list array 5
-    const fiveDayForecast = jsObject.list.filter( forecast => forecast.dt_txt.includes('18:00:00'));
-    
+    const fiveDayForecast = jsObject.list.filter(forecast => forecast.dt_txt.includes('18:00:00'));
+
 
     console.log(fiveDayForecast);
 
@@ -85,11 +85,59 @@ fetch(apiURLF)
 
       document.getElementById(`day${day+1}`).textContent = week[d.getDay()];
       document.getElementById(`forecast${day+1}`).innerHTML = x.main.temp;
-      
+
       document.getElementById(`icon${day+1}`).setAttribute('src', topp);
       document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
       day++;
 
     });
+
+  });
+
+/*events*/
+
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
+    console.log(jsonObject);
+    const towns = jsonObject['towns'];
+
+
+    for (let i = 0; i < towns.length; i++) {
+
+      if (towns[i].name === "Preston") {
+
+        let event = document.createElement('section');
+
+
+
+        let first = document.createElement('p')
+        let second = document.createElement('p')
+        let third = document.createElement('p')
+
+
+
+        first.textContent = `${towns[i].events[0]} `;
+        second.textContent = `${towns[i].events[1]} `;
+        third.textContent = `${towns[i].events[2]} `;
+
+        event.append(first);
+        event.append(second);
+        event.append(third)
+
+
+        document.querySelector('div.activity').appendChild(event);
+      }
+
+
+    };
+
+
+
 
   });
