@@ -4,13 +4,13 @@
         "name": "Mcdonalds",
         "contact": "(801) 441-7555",
         "links": "https://www.mcdonalds.com/us/en-us/location/ut/american-fork/406-e-state/5231.html?cid=RF:YXT:GMB::Clicks",
-        "imageurl": "McDonalds.png"
+        "imageurl": "McDonalds.jpg"
       },
       {
-        "name": "Domo",
-        "contact": "(800) 441-1000",
-        "links": "https://www.domo.com/",
-        "imageurl": "Domo.jpg"
+        "name": "Black Bear Diner",
+        "contact": "(801) 763-7147",
+        "links": "https://blackbeardiner.com/location/american-fork/",
+        "imageurl": "Black.png"
       },
       {
         "name": "FreshMarket",
