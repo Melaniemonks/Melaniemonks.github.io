@@ -1,0 +1,46 @@
+{
+    "business": [
+      {
+        "name": "Mcdonalds",
+        "contact": "(801) 441-7555",
+        "links": "https://www.mcdonalds.com/us/en-us/location/ut/american-fork/406-e-state/5231.html?cid=RF:YXT:GMB::Clicks",
+        "imageurl": "McDonald's.png"
+      },
+      {
+        "name": "Domo",
+        "contact": "(800) 441-1000",
+        "links": "https://www.domo.com/",
+        "imageurl": "domo.jpg"
+      },
+      {
+        "name": "FreshMarket",
+        "contact": "(801) 756-1440",
+        "links": "https://freshmarketstores.com/",
+        "imageurl": "freshmarket.jpg"
+      },
+      {
+        "name": "HomeGoods",
+        "contact": "(801) 492-6211",
+        "links": "https://www.homegoods.com/",
+        "imageurl": "homegoods.jpg"
+      },
+      {
+        "name": "Ross",
+        "contact": "(801) 756-6342",
+        "links": "https://www.rossstores.com/",
+        "imageurl": "ross.jpg"
+      },
+      {
+        "name": "Burglington",
+        "contact": "(385) 293-1015",
+        "links": "https://www.burlington.com/",
+        "imageurl": "burglinton.jpg"
+      },
+      {
+        "name": "Deseret Industries Thrift Store",
+        "contact": "(801) 763-4560",
+        "links": "https://www.deseretindustries.org/",
+        "imageurl": "deseret.jpg"
+      }
+    ]
+}
