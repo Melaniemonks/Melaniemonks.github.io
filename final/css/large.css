@@ -1,0 +1,35 @@
+@media only screen and (min-width: 62em) {
+    /*Start Editing from here*/
+    header{
+        flex-direction: row;
+    }
+
+    header img{
+        width: 10%;
+    }
+
+    nav button {
+        display: none;
+    
+    }
+
+    nav ul.navigation {
+        display:inline;
+    }
+
+    /*homepage*/
+    .advertisement{
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        
+    }
+
+    .name{
+        
+        border-right:.5rem double rgb(139, 0, 0);
+        
+    }
+
+
+}

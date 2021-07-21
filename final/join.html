@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Be a part of the American Fork community. Sign up to join our Chamber of Commerce">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Noto+Sans+JP:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+    <script defer src="js/scripts.js"></script>
+    <title>American Fork Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logoo2.jpg" alt="logo">
+        <section class="name">
+            <h1>American Fork Chamber of Commerce</h1>
+        </section>
+        <section class="headers">
+            <nav>
+                <button onclick="toggleMenu()">&#9776; Menu</button>
+                <ul class="navigation" id="navo">
+                        <li><a href="#">Site Purpose</a></li>
+                        <li><a href="#">Audience</a></li>
+                        <li><a href="#">Color Scheme</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Typography</a></li>
+                    </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>
+                We Aim to Assist!
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt tempora nihil fugiat impedit
+                neque blanditiis, harum accusamus amet cum mollitia nam magni ex at. Ratione natus necessitatibus quos
+                officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo adipisci commodi quos
+                quidem maxime animi exercitationem iusto cumque, fugit earum assumenda, voluptas possimus aliquid esse
+                obcaecati? Neque, asperiores ex.</p>
+        </section>
+
+        <div class="levels">
+            <section class="nonprofit">
+                <h2> Gold ($1000)</h2>
+                <section>
+                    <ul>
+                        <li>Logo advertising on Chamber home page</li>
+                        <li>​Golf Tournament - 2 players</li>
+                        <li>Free Certificates of Origin (unlimited number of documents per year)</li>
+                        <li>Corporate Golf Membership Access - 6 times, 9 holes w/cart for 4 peopl</li>
+                        <li>All benefits of Silver Membership</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="nonprofit">
+                <h2> Silver ($400)</h2>
+                <section>
+                    <ul>
+                        <li>1 seat at Monthly Chamber Luncheon ($240 value)</li>
+                        <li>15 second video created from ribbon cutting</li>
+                        <li>Corporate Golf Membership Access - 1 time, 9 holes w/cart for 2 people</li>
+                        <li>Free Certificates of Origin (up to 15 documents per year)</li>
+                        <li>All benefits of Bronze Membership</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="nonprofit">
+                <h2> Bronze ($200)</h2>
+                <section>
+                    <ul>
+                        <li>Listing on the Chamber Membership Directory</li>
+                        <li>Ribbon cutting ceremony with the Chamber and city officials</li>
+                        <li>Social media promotion for ribbon cutting ceremony</li>
+                        <li>Member only referrals</li>
+                        <li>Free Certificates of Origin (up to 5 documents per year)</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="nonprofit">
+                <h2> Non-profit ($100)</h2>
+                <section>
+                    <ul>
+                        <li>​Increased online tools for your business</li>
+                        <li>​A close-knit community of business leaders</li>
+                       
+                    </ul>
+                </section>
+            </section>
+        </div>
+
+
+        <div class="sign">
+            <h3>
+                Sign Up! Click here to log in and all
+            </h3>
+            <form action="https://melaniemonks.github.io/lesson8/action.html" >
+
+                <div class="personal">
+                    <fieldset>
+                    
+                     <legend> Personal Information</legend> 
+                    
+                    <section class="input">
+                        <p><label for="fname">First Name: </label><br>
+                            <input type="text" name="fname" id="fname" required><br></p>
+                        <p><label for="lname">Last Name: </label><br>
+                            <input type="text" name="lname" id="lname" required><br></p>
+                        <p><label for="email">Email: </label><br>
+                            <input type="text" name="email" id="email" placeholder="example@email.com" required><br></p>
+                        <p><label for="mobphone">Mobile Number: </label><br>
+                            <input type="tel" name="phone" id="mobphone"><br></p>
+
+                    </section>
+                </fieldset>
+                </div>
+
+
+                <div class="business">
+                    <Fieldset>
+                    <legend>Business Information</legend>
+                    <section class="input">
+                        <p><label for="bname">Business Name: </label><br>
+                            <input type="text" name="bname" id="bname" required><br></p>
+                        <p><label for="address">Address: </label><br>
+                            <input type="text" name="address" id="address" required><br></p>
+                        <p><label for="information">Description: </label><br>
+                            <textarea name="message" rows="5" cols="20" id="information"></textarea><br></p>
+                        <p><label for="phone">Mobile Number: </label><br>
+                            <input type="tel" name="phone" id="phone"><br></p>
+                        <p><label for="region">Membership Level</label>
+                            <select id="region" name="region" required>
+                                <option value="">Select level... </option>
+                                <option value="non-profit">Non-profit($100)</option>
+                                <option value="bronze">Bronze($200)</option>
+                                <option value="silver">Silver($400)</option>
+                                <option value="gold">Gold($1000)</option>
+                            </select></p>
+
+                    </section>
+                </Fieldset>
+                </div>
+
+                <section class="move"> 
+                    <button class="button">Join</button>
+                </section>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <section>
+            &copy;<span id="year"></span> | Melanie Monkurai | Idaho |
+            Learning </a><br>
+            <section class="update">Last modified: <span id="lastmod"></span></section>
+        </section>
+
+
+    </footer>
+</body>
+
+</html>
