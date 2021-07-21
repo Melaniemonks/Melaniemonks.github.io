@@ -21,7 +21,7 @@ fetch(requestURL)
             h2.innerHTML = `${business[i].name} <span class="purple"></span>`;
             contact.textContent = 'Contact information:' + ' ' + business[i].contact;
             link.textContent = 'Visit us:' + ' ' + business[i].links;
-            img.setAttribute('src', "images/"+ business[i].photo);
+            img.setAttribute('src', "images/"+ business[i].imageurl);
             img.setAttribute ('class', 'image1size')
             img.setAttribute('Alt', `The  portrait of ${business[i].name}!` );
             
