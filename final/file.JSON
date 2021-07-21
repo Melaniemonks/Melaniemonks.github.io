@@ -4,7 +4,7 @@
         "name": "Mcdonalds",
         "contact": "(801) 441-7555",
         "links": "https://www.mcdonalds.com/us/en-us/location/ut/american-fork/406-e-state/5231.html?cid=RF:YXT:GMB::Clicks",
-        "imageurl": "McDonalds.jpg"
+        "imageurl": "mcdonalds.jpg"
       },
       {
         "name": "Black Bear Diner",
@@ -16,13 +16,13 @@
         "name": "FreshMarket",
         "contact": "(801) 756-1440",
         "links": "https://freshmarketstores.com/",
-        "imageurl": "FreshMarket.jpg"
+        "imageurl": "FreshMarket.png"
       },
       {
-        "name": "HomeGoods",
-        "contact": "(801) 492-6211",
-        "links": "https://www.homegoods.com/",
-        "imageurl": "HomeGoods.jpg"
+        "name": "Hope Avenue Boutique",
+        "contact": "(801) 492-5007",
+        "links": "https://hopeaveboutique.com/",
+        "imageurl": "HopeAvenue.jpg"
       },
       {
         "name": "Ross",
