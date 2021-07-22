@@ -69,7 +69,7 @@ fetch(apiURLP)
     
 
     //Makes the list array 5
-    const fiveDayForecast = jsObject.list.filter( forecast => forecast.dt_txt.includes('18:00:00'));
+    const fiveDayForecast = jsObject.list.filter( onecall => onecall.dt_txt.includes('18:00:00'));
     
 
     console.log(fiveDayForecast);

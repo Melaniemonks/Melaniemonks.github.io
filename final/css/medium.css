@@ -6,23 +6,26 @@
             flex-direction: row;
         }
 
+        .name{
+            font-size: .9rem;
+        }
+
+        header img{
+            width: 25%;
+        }
+
 
 
 
         /*main*/
         main{
-            margin-left: 5rem;
-            margin-right: 5rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
             
         }
 
         /*homepage*/
-        .advertisement{
-        
-            grid-template-columns: 1fr 1fr;
-            
-            
-        }
+       
         
         /*join*/
         .sign{
@@ -33,6 +36,36 @@
         .levels{
             flex-direction: row;
         }
+
+        
+
+        /*city*/
+
+        .background{
+            width: 80%;
+        }
+
+        .activities{
+            display:flex;
+            flex-direction: row;
+         }
+        
+
+        /*Contact*/
+        .people{
+            flex-direction: row;
+        }
+
+        .quick{
+            width:50%;
+        }
+
+        /*footer*/
+        .social{
+            flex-direction: row;
+        }
+
+        
     
     
 }

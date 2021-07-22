@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Noto+Sans+JP:wght@300&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/home.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logoo2.jpg" alt="logo">
+        <section class="name">
+
+            <h1>American Fork Chamber of Commerce</h1>
+
+        </section>
+
+
+        <section class="headers">
+            <nav>
+
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul class="navigation" id="navo">
+                    <li><a href="https://melaniemonks.github.io/final/home.html">Home</a></li>
+                    <li><a href="https://melaniemonks.github.io/final/city.html">City</a></li>
+                    <li><a href="https://melaniemonks.github.io/final/join.html">Join</a></li>
+                    <li><a href="https://melaniemonks.github.io/final/board.html">Directory</a></li>
+                    <li><a href="https://melaniemonks.github.io/final/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="heroimage">
+            <img src="images/Af1.jpg" alt="people of american fork">
+        </section>
+
+        <section class="introduction">
+            <h2>
+                American Fork Chamber of Commerce
+            </h2>
+
+            <p>American Fork Chamber of Commerce aims to please the resisdents of this city. From creating networks to opportunities
+                for new prospective members to showcase their interest, learn
+                and be conversant with our community to helping existing memberscontinue to support
+                the community using this platform. We act as the voice and help each member grow and succeed</p>
+
+
+        </section>
+
+
+        <section class="alone">
+            <h2>Highlight of The Week</h2>
+
+
+            <section class='advertisement'>
+
+                <section class="company">
+                    <img src="images/burgerkings.jpg" alt="Burger King">
+                    <section>
+                        <h2>Burger King</h2>
+                        <p>"Have it Your Way!" Do not miss out on the family meal offer for the week!. Save more than 30% on others above $20. Hurry!!</p>
+                    </section>
+                </section>
+
+                <section class="company">
+                    <img src="images/BBn.jpg" alt="black bear diner">
+                    <section>
+                        <h2>Black Bear Diner</h2>
+                        <p>Breakfast in Bed! Bear Diner now available on doordash. get 10% off your first pick. Use the code "!BEARME!".</p>
+                    </section>
+                </section>
+
+                <section class="company">
+                    <img src="images/McDonald.png" alt="macDonald">
+                    <section>
+                        <h2>McDonald</h2>
+                        <p>McMe feed you! New pineaple smoothie added. Don't hesitat, we McNeed you.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="weather">
+            <h2>Weather Now</h2>
+            <p>Current temperature: <span id="temp"></span>&deg; F</p>
+            <p>Condition: <span id="condition"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+        </section>
+
+        <div class="weatherpred">
+            <h2>Weather forecast</h2>
+
+            <div class="flex">
+                <div class="box">
+                    <span class="topp" id="day1"></span>
+                    <img src="#" alt="#" id="icon1">
+                    <h3><span id='forecast1' class="data"></span>&deg; F</h3>
+                </div>
+                <div class="box">
+                    <span class="topp" id='day2'></span>
+                    <img src="#" alt="#" id="icon2">
+                    <h3><span class="data" id='forecast2'></span>&deg; F</h3>
+                </div>
+                <div class="box">
+                    <span class="topp" id="day3"></span>
+                    <img src="#" alt="#" id='icon3'>
+                    <h3><span class="data" id='forecast3'></span>&deg; F</h3>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="calltoaction">
+            <h3>Sign up today to be a part of our community</h3>
+            <p>We are eager to have you be a member of our community. Learn object our offers</p>
+
+            <button class="button" type="submit" onclick="location.href='join.html'">Join</button>
+            
+        </div>
+
+
+        <div class="additional">
+            <section class='events'>
+                <h2>Events</h2>
+                <section>
+                    <p>July 23: Green Day's American idiot</p>
+                    <p>July 24: The Oak Ridge Boys</p>
+                    <p>July 23: The letter Man</p>
+
+                </section>
+            </section>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="social">
+
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <p>TEXT: (208) 234-5678<br>
+                    CALL: (208) 234-5678<br>
+                    Mail: AFoCommerce@gmail.com<br>
+                    &copy;<span id="year"> | Melanie Monkurai <br></p>
+                    <section class="update">Last modified: <span id="lastmod"></span></section>
+            </section>
+
+            <section class='online'>
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="www.facebook.com">
+                            <img src="images/facebook.png" alt="link to facebook page"></a>
+                        <a href="www.instagram.com">
+                            <img src="images/Instagram.png" alt="link to instagram"></a>
+                        <a href="www.twitter.com">
+                            <img src="images/twitter.png" alt="link to twitter"></a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+        
+
+
+    </footer>
+</body>
+
+</html>

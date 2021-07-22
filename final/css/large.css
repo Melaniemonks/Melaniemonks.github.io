@@ -4,6 +4,10 @@
         flex-direction: row;
     }
 
+    .name{
+        font-size: .9rem;
+    }
+
     header img{
         width: 10%;
     }
@@ -15,6 +19,12 @@
 
     nav ul.navigation {
         display:inline;
+    }
+
+    main{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
     }
 
     /*homepage*/
@@ -29,6 +39,34 @@
         
         border-right:.5rem double rgb(139, 0, 0);
         
+    }
+
+    /*city*/
+
+    
+    .af{
+        flex-direction: row;
+    }
+
+    .af img{
+        width: 70%;
+    }
+
+    .af p{
+        text-align: start;
+        padding: .5rem;
+        font-weight: bolder;
+    }
+
+    
+
+    .background{
+        width: 50%;
+    }
+    
+    /*contact*/
+    .all{
+        flex-direction: row;
     }
 
 

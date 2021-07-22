@@ -22,16 +22,16 @@ header{
     padding:1rem;
 }
 
-.weather p{
-    font-family: 'IM Fell English SC', serif;
+.weather h2{
+    color:rgb(139, 0, 0) ;
 }
-
 
 
 .name{
     display:flex;
     align-items: center;
     padding:.3rem;
+    font-size: .7rem;
 }
 
 section h1{
@@ -90,12 +90,14 @@ nav ul.navigation {
 
 }
 
+header img{
+    width: 50%;
+}
+
 
 /*Main*/
 main{
     text-align: center;
-   
-    
     font-family: 'IM Fell English SC', serif;
     background-color:RGB 218, 247, 166  ;
     color: black;
@@ -156,11 +158,10 @@ p{
 }
 
 .alone{
-    box-shadow: 3px 4px 5px black;
+    
     padding:1rem;
     border:8px solid white ;
     border-top:4px solid white;
-    border-top:.5rem solid rgb(139, 0, 0) ;
     color: white;
     max-width:70%;
     margin: 0 auto;
@@ -177,18 +178,38 @@ p{
     margin: 1rem;
     box-shadow: 3px 4px 5px white;
     padding:.5rem;
-    border-left: 1rem solid rgb(139, 0, 0);
-    border-top-left-radius:5rem ;
+    box-shadow: 2px 3px 4px black;
    
 
 }
 
+.company p{
+    color: black;
+    font-weight: bolder;
+    
+}
+
 .company img{
     max-width:50%;
-    border-radius: 6rem;
+    border-radius: 1rem;
     box-shadow: 2px 3px 5px 2px black;
     background-color: white;
     padding: 1rem;
+}
+
+.weatherpred{
+    margin:.5rem;
+}
+
+.weatherpred h2{
+    color:rgb(139, 0, 0) ;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin:2rem;
+    font-size: 1.5rem;
 }
 
 .additional{
@@ -253,21 +274,24 @@ form{
     padding: 1rem;
     border-left: 6px solid rgb(139, 0, 0) ;
     box-shadow: 2px 3px 4px 5px black;
-    margin: 1rem;
     max-width: 100%;
     
     
+}
+
+textarea{
+    padding:1rem;
 }
 
 fieldset{
-    max-width: 100%;
-    margin: 0 auto;
+    
+    justify-content: center;
 }
 
 .personal, .business{
-    padding:.4rem;
+    padding:.1rem;
     max-width: 100%;
-    margin: 1rem;
+    margin: .1rem;
 }
 
 legend{
@@ -334,35 +358,166 @@ select{
 .city{
     display:flex;
     flex-direction: column;
+    align-items: center;
+    
+
 
 }
 
-.background{
-    margin: 1rem;
+.af{
     display: flex;
     flex-direction: column;
 }
 
-.background section{
-    max-width: 100%;
+.af img{
+    width: 100%;
+}
+
+.background{
+    margin:1rem;
+    padding: 1rem;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    border-left:5px solid rgb(139, 0, 0);
+    border-right:5px solid rgb(139, 0, 0);
+    box-shadow: 2px 3px 4px black;
 }
 
 .events{
     width:50%;
     margin: 0 auto;
-  
     padding:1rem;
+    
+    
     
 }
 
+.activities{
+   display:flex;
+   flex-direction: column;
+   padding: 1rem;
+   margin: 1rem;
+}
 
+.events h3{
+    font-size: 1.7rem;
+}
+
+.events h4{
+    font-size: 1.4rem;
+}
+
+.events h4{
+    color: rgb(139, 0, 0);
+}
+
+.events p{
+    font-weight:bolder;
+}
+
+/*businesses*/
+
+.businesses{
+box-shadow: 2px 3px 4px 5px black;
+
+    
+}
+
+.businesses img{
+    padding:1rem;
+    width: 30%;
+}
+
+.businesses ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.businesses ul{
+    padding: 0;
+}
+
+/*Contacts*/
+.board h2{
+    font-size: 2rem;
+}
+
+.people{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.person {
+    margin:1rem;
+}
+
+.person img{
+    width:100%;
+    box-shadow: 2px 3px 4px #555;
+}
+
+.quick{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info {
+    padding:1rem;
+}
+
+.all strong{
+
+    color:rgb(139, 0, 0);
+}
+
+.social{
+    padding:1rem;
+    margin:1rem;
+}
+
+.social h3{
+    font-size: 2rem;
+}
+
+.all{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin:1rem;
+
+}
+
+.map{
+    max-width: 100%;
+}
+
+iframe{
+    width:100%;
+   
+}
 
 /*footer*/
 footer{
+    justify-content: space-evenly;
     background-color:rgb(255, 255, 255) ;
     box-shadow: 2px 3px 4px black;
-    padding: 1rem;
+    padding: .1rem;
     text-align: center;
     box-shadow: 1px 2px 3px 4px  rgb(139, 0, 0);
+    margin: 0 auto;
 
+}
+
+.social{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    
+}
+
+.online li{
+    list-style-type: none;
 }
