@@ -1,23 +1,14 @@
-var elements = document.getElementsByClassName("businesses");
+window.addEventListener("DOMContentLoaded", function(){
+  document.getElementById("listView").addEventListener("click", function(){
+    document.getElementById("cards").classList.remove("grid");
+  });
+  document.getElementById("gridView").addEventListener("click", function(){
+    document.getElementById("cards").classList.add("grid");
+  });
+  
 
-// Declare a loop variable
-var i;
 
-// List View
-function listView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "10%";
-  }
-}
-
-// Grid View
-function gridView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "50%";
-    
-  }
-}
-
+});
 
 
 
@@ -65,10 +56,12 @@ fetch(requestURL)
             
 
 
-            document.querySelector('div.cards').append(card);
+            document.querySelector('#cards').append(card);
         }
 
 
 
 
     });
+
+
