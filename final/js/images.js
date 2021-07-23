@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", function(){
   document.getElementById("listView").addEventListener("click", function(){
     document.getElementById("cards").classList.remove("grid");
+    document.getElementById("cards").classList.add("list");
   });
   document.getElementById("gridView").addEventListener("click", function(){
     document.getElementById("cards").classList.add("grid");

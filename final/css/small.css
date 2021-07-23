@@ -13,7 +13,7 @@ header{
     color: rgb(139, 0, 0);
     font-family: 'IM Fell English SC', serif;
     border-bottom: 1px solid rgb(139, 0, 0);
-    box-shadow: 2px 3px 4px black;
+    box-shadow: 2px 3px 4px 	rgb(0,0,0);
     border-bottom: 1rem solid rgb(139, 0, 0) ;
     
 }
@@ -68,7 +68,7 @@ nav li a {
 }
 
 nav li:hover{
-    box-shadow: 2px 3px 4px black;  
+    box-shadow: 2px 3px 4px rgb(0,0,0);  
     border-top:3px solid rgb(139, 0, 0); 
 }
 
@@ -100,7 +100,7 @@ main{
     text-align: center;
     font-family: 'IM Fell English SC', serif;
     background-color:RGB 218, 247, 166  ;
-    color: black;
+    color: 	rgb(0,0,0);
     
 
 }
@@ -116,7 +116,7 @@ p{
 
 .heroimage img{
     width: 100%;
-    box-shadow: 5px 2px 3px  black;
+    box-shadow: 5px 2px 3px rgb(0,0,0);
     
 }
 
@@ -160,15 +160,15 @@ p{
 .alone{
     
     padding:1rem;
-    border:8px solid white ;
-    border-top:4px solid white;
-    color: white;
+    border:8px solid rgb(255, 255, 255) ;
+    border-top:4px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     max-width:70%;
     margin: 0 auto;
 }
 
 .alone h2{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color:rgb(139, 0, 0);
     padding:.5rem;
 }
@@ -176,15 +176,15 @@ p{
 .company{
     max-width: 100%;
     margin: 1rem;
-    box-shadow: 3px 4px 5px white;
+    box-shadow: 3px 4px 5px rgb(255, 255, 255);
     padding:.5rem;
-    box-shadow: 2px 3px 4px black;
+    box-shadow: 2px 3px 4px rgb(0,0,0);
    
 
 }
 
 .company p{
-    color: black;
+    color: rgb(0,0,0);
     font-weight: bolder;
     
 }
@@ -192,8 +192,8 @@ p{
 .company img{
     max-width:50%;
     border-radius: 1rem;
-    box-shadow: 2px 3px 5px 2px black;
-    background-color: white;
+    box-shadow: 2px 3px 5px 2px rgb(0,0,0);
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
 }
 
@@ -215,7 +215,7 @@ p{
 .additional{
     padding: 1rem;
     margin: 1rem;
-    color:black;
+    color:rgb(0,0,0);
     
     
 }
@@ -228,7 +228,7 @@ p{
 
 .events li a{
     
-    color: black;
+    color:rgb(0,0,0);
     text-align: center;
     text-decoration: none;
 }
@@ -236,10 +236,10 @@ p{
 
 
 .calltoaction{
-    box-shadow: 2px 3px 4px 5px black;
+    box-shadow: 2px 3px 4px 5px rgb(0,0,0);
     border-top: 3px solid rgb(139, 0, 0) ;
     margin:1rem;
-    color: black;
+    color: 	rgb(0,0,0);
     padding: 1rem;
 }
 
@@ -265,7 +265,7 @@ p{
 
 .sign h3{
     background-color:rgb(139, 0, 0) ;
-    color:white;
+    color:rgb(255, 255, 255);
     padding:2rem;
 }
 
@@ -273,7 +273,7 @@ form{
     text-align: left;
     padding: 1rem;
     border-left: 6px solid rgb(139, 0, 0) ;
-    box-shadow: 2px 3px 4px 5px black;
+    box-shadow: 2px 3px 4px 5px rgb(0,0,0);
     max-width: 100%;
     margin: 1rem;
     
@@ -326,7 +326,7 @@ select{
    margin: 0 auto;
    display: block;
     background-color: rgb(139, 0, 0);
-   color: white;
+   color: rgb(255, 255, 255);
     border-radius: 8px;
 }
 
@@ -382,7 +382,7 @@ select{
     flex-direction: column;
     border-left:5px solid rgb(139, 0, 0);
     border-right:5px solid rgb(139, 0, 0);
-    box-shadow: 2px 3px 4px black;
+    box-shadow: 2px 3px 4px rgb(0,0,0);
 }
 
 .events{
@@ -420,19 +420,42 @@ select{
 /*businesses*/
 
 #cards{
-    display: grid;
-    grid-gap: 5px;
-}
-
-
-
-.businesses{
-box-shadow: 2px 3px 4px 5px black;
-padding: 10px;
+    margin:0 auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    
     
 }
 
-.grid { grid-template-columns: 1fr 1fr 1fr; }
+
+
+
+.buttons{
+    padding:.7rem;
+    font-size: 20px;
+    background-color: rgb(139, 0, 0);
+   color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.businesses{
+box-shadow: 2px 3px 4px 5px rgb(0,0,0);
+margin: 1rem;
+padding: 10px;
+max-width: 100%;
+    
+}
+
+#gridView{
+    display:none
+}
+
+.grid {
+    
+    grid-gap: 5px;
+    display: grid;
+    margin:0 auto; 
+    }
 
 .businesses img{
     padding:1rem;
@@ -513,7 +536,7 @@ footer{
     font-family:'IM Fell English SC', sans serif;
     justify-content: space-evenly;
     background-color:rgb(255, 255, 255) ;
-    box-shadow: 2px 3px 4px black;
+    box-shadow: 2px 3px 4px rgb(0,0,0);
     padding: .1rem;
     text-align: center;
     box-shadow: 1px 2px 3px 4px  rgb(139, 0, 0);

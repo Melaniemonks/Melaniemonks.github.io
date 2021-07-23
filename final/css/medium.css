@@ -60,6 +60,16 @@
             width:50%;
         }
 
+        /*businesses*/
+        #gridView{
+            display:initial;
+        }
+
+        .grid {
+    
+           
+            grid-template-columns: 1fr 1fr; 
+            }
         /*footer*/
         .social{
             flex-direction: row;
