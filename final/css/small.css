@@ -275,6 +275,7 @@ form{
     border-left: 6px solid rgb(139, 0, 0) ;
     box-shadow: 2px 3px 4px 5px black;
     max-width: 100%;
+    margin: 1rem;
     
     
 }
